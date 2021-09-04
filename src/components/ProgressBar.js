@@ -1,10 +1,8 @@
-import React from "react";
-import { StyleSheet, View, Text } from "react-native";
+import * as React from 'react';
+import { ProgressBar, Colors } from 'react-native-paper';
 
-export default function ProgressBar({}) {
-  return (
-    <View>
-      <Text>ProgressBar</Text>
-    </View>
-  );
-}
+const MyComponent = () => (
+  <ProgressBar style={{marginTop: 300}}progress={10.0} color={Colors.red800} />
+);
+
+export default MyComponent;
