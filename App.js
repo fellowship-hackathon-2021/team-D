@@ -3,6 +3,7 @@ import { Provider } from 'react-native-paper'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { theme } from './src/core/theme'
+import { ProgressBar, Colors } from 'react-native-paper';
 import {
   StartScreen,
   LoginScreen,
@@ -12,6 +13,9 @@ import {
 } from './src/screens'
 
 const Stack = createStackNavigator()
+const MyComponent = () => (
+  <ProgressBar style={{marginTop: 300}}progress={10.0} color={Colors.red800} />
+);
 
 export default function App() {
   return (
