@@ -14,9 +14,7 @@ import ProgressBar from "./src/components/ProgressBar";
 const Stack = createStackNavigator()
 export default function App() {
   return (
-    <View>
-    <ProgressBar/>
-    </View>
+
     <Provider theme={theme}>
       <NavigationContainer>
         <Stack.Navigator
