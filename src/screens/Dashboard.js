@@ -22,9 +22,9 @@ export default function Dashboard({ navigation }) {
       <VideoPlayer />
       <View style={styles.courseOutlineContainer}>
         <View>
-          <Text style={styles.course}>Course 1</Text>
-          <Text style={styles.course}>Course 2</Text>
-          <Text style={styles.course}>Course 3</Text>
+          <Button style={styles.course}>Course 1</Button>
+          <Button style={styles.course}>Course 2</Button>
+          <Button style={styles.course}>Course 3</Button>
         </View>
       </View>
     </Background>
