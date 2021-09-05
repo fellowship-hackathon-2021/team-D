@@ -9,9 +9,9 @@ export default function StartScreen({ navigation }) {
   return (
     <Background>
       <Logo />
-      <Header>Login Template</Header>
-      <Paragraph>
-        The easiest way to start with your amazing application.
+      <Header>The Headstarter Crash Course</Header>
+      <Paragraph >
+        Login or sign up if you don't have an existing account
       </Paragraph>
       <Button
         mode="contained"
