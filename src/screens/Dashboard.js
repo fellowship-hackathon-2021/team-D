@@ -9,12 +9,16 @@ import { StyleSheet, View, Text } from "react-native";
 import ProgressBar from "../components/ProgressBar";
 import { theme } from "../core/theme";
 
-export default function Dashboard({ navigation }) {
+export default function Dashboard({ navigation, userName }) {
+  // remove this when we get the userName prop working
+  userName = "ibrahim suhail";
   return (
     <Background>
       <View style={styles.topBarView}>
         <View style={styles.topBar}>
-          <Text>User Name</Text>
+          <View style={{ alignSelf: "flex-start" }}>
+            <Text style={{ fontSize: 20 }}>{userName}</Text>
+          </View>
           <ProgressBar />
         </View>
       </View>
@@ -35,13 +39,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "flex-start",
   },
   topBarView: {
-    backgroundColor: theme.colors.placeholder,
+    backgroundColor: theme.colors.accent,
     top: 0,
     position: "absolute",
     width: "100%",
-    height: 25,
+    height: 35,
     margin: 0,
   },
   courseOutline: { flex: 1 },
