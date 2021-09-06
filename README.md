@@ -1,5 +1,5 @@
-# team-D
-APP GROUP PROJECT - README
+# Dockers 🐳
+
 ===
 # THS CRASH COURSE 
 
