@@ -108,4 +108,8 @@ class Quiz extends React.Component {
   }
 }
 
+<<<<<<< HEAD
 export default Quiz;
+=======
+export default Quiz;
+>>>>>>> b7b1b3aed4b565cae8d4150bdf0863e878d6c371
