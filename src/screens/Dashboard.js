@@ -5,19 +5,23 @@ import Header from "../components/Header";
 import Paragraph from "../components/Paragraph";
 import Button from "../components/Button";
 import VideoPlayer from "../components/VideoPlayer";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, SafeAreaView } from "react-native";
 import ProgressBar from "../components/ProgressBar";
 import { theme } from "../core/theme";
 
-export default function Dashboard({ navigation }) {
+export default function Dashboard({ navigation, userName }) {
+  // remove this when we get the userName prop working
+  userName = "ibrahim suhail";
   return (
     <Background>
-      <View style={styles.topBarView}>
-        <View style={styles.topBar}>
-          <Text>User Name</Text>
+      <SafeAreaView style={styles.topBarView}>
+        <SafeAreaView style={styles.topBar}>
+          <SafeAreaView style={{ alignSelf: "flex-start" }}>
+            <Text style={{ fontSize: 20 }}>{userName}</Text>
+          </SafeAreaView>
           <ProgressBar />
-        </View>
-      </View>
+        </SafeAreaView>
+      </SafeAreaView>
       <Logo />
       <VideoPlayer />
       <View style={styles.courseOutlineContainer}>
@@ -35,13 +39,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
+    alignItems: "flex-start",
   },
   topBarView: {
-    backgroundColor: theme.colors.placeholder,
+    backgroundColor: theme.colors.accent,
     top: 0,
     position: "absolute",
     width: "100%",
-    height: 25,
+    height: 35,
     margin: 0,
   },
   courseOutline: { flex: 1 },
