@@ -10,6 +10,7 @@ import {
   ResetPasswordScreen,
   Dashboard,
 } from './src/screens'
+<<<<<<< HEAD
 import ProgressBar from './src/components/ProgressBar';
 const Stack = createStackNavigator()
 export default function App() {
@@ -34,5 +35,36 @@ export default function App() {
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
+=======
+// import QuizIndex from './src/screens'
+// import ProgressBar from './src/components/ProgressBar';
+import Navigator from './src/routes/homeStack'
+// const Stack = createStackNavigator()
+export default function App() {
+  return (
+    <Navigator/>
+    // <Provider theme={theme}>
+
+    //   <NavigationContainer>
+    //     <Stack.Navigator
+    //       initialRouteName="StartScreen"
+    //       screenOptions={{
+    //         headerShown: false,
+    //       }}
+    //     >
+    //       <Stack.Screen name="StartScreen" component={StartScreen} />
+    //       <Stack.Screen name="LoginScreen" component={LoginScreen} />
+    //       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+    //       <Stack.Screen name="Dashboard" component={Dashboard} />
+          
+          
+    //       <Stack.Screen
+    //         name="ResetPasswordScreen"
+    //         component={ResetPasswordScreen}
+    //       />
+    //     </Stack.Navigator>
+    //   </NavigationContainer>
+    // </Provider>
+>>>>>>> b7b1b3aed4b565cae8d4150bdf0863e878d6c371
   )
 }

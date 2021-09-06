@@ -4,6 +4,7 @@ import Logo from "../components/Logo";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import Paragraph from "../components/Paragraph";
+import homeStack from '../routes/homeStack'
 
 export default function StartScreen({ navigation }) {
   return (
@@ -30,6 +31,9 @@ export default function StartScreen({ navigation }) {
       }
       <Button mode="outlined" onPress={() => navigation.navigate("Dashboard")}>
         Home
+      </Button>
+      <Button mode="outlined" onPress={() => navigation.navigate("QuizIndex")}>
+        Quiz
       </Button>
     </Background>
   );

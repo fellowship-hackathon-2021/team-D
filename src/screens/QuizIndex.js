@@ -7,7 +7,12 @@ import computerQuestions from "../data/computers";
 
 import { RowItem } from "../components/RowItem";
 
+<<<<<<< HEAD
 export default ({ navigation }) => (
+=======
+export default function QuizIndex({ navigation })  {
+  return(
+>>>>>>> b7b1b3aed4b565cae8d4150bdf0863e878d6c371
   <ScrollView>
     <StatusBar barStyle="dark-content" />
     <RowItem
@@ -44,4 +49,8 @@ export default ({ navigation }) => (
       }
     />
   </ScrollView>
+<<<<<<< HEAD
 );
+=======
+  )}
+>>>>>>> b7b1b3aed4b565cae8d4150bdf0863e878d6c371
