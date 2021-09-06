@@ -8,8 +8,28 @@ import VideoPlayer from "../components/VideoPlayer";
 import { StyleSheet, View, Text } from "react-native";
 import ProgressBar from "../components/ProgressBar";
 import { theme } from "../core/theme";
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer} from 'react-navigation';
+import LoginScreen from '../screens/LoginScreen'
+import QuizIndex from '../screens/QuizIndex'
 
 export default function Dashboard({ navigation }) {
+  // const screens = {
+  //   Login: {
+  //     screen: LoginScreen
+  //   },
+  //   QuizIndex: {
+  //     screen: QuizIndex
+  //   }
+  // }
+
+  // const HomeStack = createStackNavigator(screens);
+  // createAppContainer(HomeStack);
+
+  // const pressHandler = () => {
+  //   navigation.navigate('QuizIndex')
+  // }
+
   return (
     <Background>
       <View style={styles.topBarView}>
@@ -25,6 +45,7 @@ export default function Dashboard({ navigation }) {
           <Button style={styles.course}>Course 1</Button>
           <Button style={styles.course}>Course 2</Button>
           <Button style={styles.course}>Course 3</Button>
+          <Button style={styles.course} onPress={() => navigation.navigate("Dashboard")}  >Quizzes</Button>
         </View>
       </View>
     </Background>
