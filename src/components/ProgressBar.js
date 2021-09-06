@@ -1,5 +1,5 @@
 import React from "react";
-
+import {View, Text} from "react-native";
 const ProgressBar = (props) => {
   const { bgcolor, completed } = props;
   const containerStyles = {
@@ -22,11 +22,11 @@ const ProgressBar = (props) => {
     fontWeight: 'bold'
   }
   return (
-    <div style={containerStyles}>
-      <div style={fillerStyles}>
-        <span style={labelStyles}>{`${completed}%`}</span>
-      </div>
-    </div>
+    <View style={containerStyles}>
+      <View style={fillerStyles}>
+        <Text style={labelStyles}>{`${completed}%`}</Text>
+      </View>
+    </View>
   );
 };
 

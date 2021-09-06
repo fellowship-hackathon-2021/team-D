@@ -1,8 +1,8 @@
 import React from "react";
 import { View, StyleSheet, StatusBar, Text, SafeAreaView } from "react-native";
 
-import { Button, ButtonContainer } from "../components/Button";
-import { Alert } from "../components/Alert";
+import { Button, ButtonContainer } from "../../App/components/Button";
+import { Alert } from "../../App/components/Alert";
 
 const styles = StyleSheet.create({
   container: {
@@ -108,8 +108,4 @@ class Quiz extends React.Component {
   }
 }
 
-<<<<<<< HEAD
 export default Quiz;
-=======
-export default Quiz;
->>>>>>> b7b1b3aed4b565cae8d4150bdf0863e878d6c371

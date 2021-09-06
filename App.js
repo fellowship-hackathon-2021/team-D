@@ -10,28 +10,33 @@ import {
   ResetPasswordScreen,
   Dashboard,
 } from "./src/screens";
-import ProgressBar from "./src/components/ProgressBar";
-const Stack = createStackNavigator();
+// import QuizIndex from './src/screens'
+// import ProgressBar from './src/components/ProgressBar';
+import Navigator from "./src/routes/homeStack";
+// const Stack = createStackNavigator()
 export default function App() {
   return (
-    <Provider theme={theme}>
-      <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName="StartScreen"
-          screenOptions={{
-            headerShown: false,
-          }}
-        >
-          <Stack.Screen name="StartScreen" component={StartScreen} />
-          <Stack.Screen name="LoginScreen" component={LoginScreen} />
-          <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
-          <Stack.Screen name="Dashboard" component={Dashboard} />
-          <Stack.Screen
-            name="ResetPasswordScreen"
-            component={ResetPasswordScreen}
-          />
-        </Stack.Navigator>
-      </NavigationContainer>
-    </Provider>
+    <Navigator />
+    // <Provider theme={theme}>
+
+    //   <NavigationContainer>
+    //     <Stack.Navigator
+    //       initialRouteName="StartScreen"
+    //       screenOptions={{
+    //         headerShown: false,
+    //       }}
+    //     >
+    //       <Stack.Screen name="StartScreen" component={StartScreen} />
+    //       <Stack.Screen name="LoginScreen" component={LoginScreen} />
+    //       <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+    //       <Stack.Screen name="Dashboard" component={Dashboard} />
+
+    //       <Stack.Screen
+    //         name="ResetPasswordScreen"
+    //         component={ResetPasswordScreen}
+    //       />
+    //     </Stack.Navigator>
+    //   </NavigationContainer>
+    // </Provider>
   );
 }
