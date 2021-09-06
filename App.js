@@ -16,8 +16,6 @@ export default function App() {
   return (
     <Provider theme={theme}>
       <NavigationContainer>
-        <ProgressBar />
-
         <Stack.Navigator
           initialRouteName="StartScreen"
           screenOptions={{
