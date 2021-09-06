@@ -32,9 +32,6 @@ export default function StartScreen({ navigation }) {
       <Button mode="outlined" onPress={() => navigation.navigate("Dashboard")}>
         Home
       </Button>
-      <Button mode="outlined" onPress={() => navigation.navigate("QuizIndex")}>
-        Quiz
-      </Button>
     </Background>
   );
 }

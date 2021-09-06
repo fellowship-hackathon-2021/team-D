@@ -1,11 +1,11 @@
 const questions = [
   {
-    question: "What is localhost's IP address?",
+    question: "What Does AWS stand for ?",
     answers: [
-      { id: "1", text: "192.168.1.1" },
-      { id: "2", text: "127.0.0.1", correct: true },
-      { id: "3", text: "209.85.231.104" },
-      { id: "4", text: "66.220.149.25" }
+      { id: "1", text: "Amazon web serverices",correct:true },
+      { id: "2", text: "Amazing Ware house Services" },
+      { id: "3", text: "Automatic Water Shuttle" },
+      { id: "4", text: "hello" }
     ]
   },
   {

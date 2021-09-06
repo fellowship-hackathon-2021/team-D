@@ -45,7 +45,9 @@ export default function Dashboard({ navigation }) {
           <Button style={styles.course}>Course 1</Button>
           <Button style={styles.course}>Course 2</Button>
           <Button style={styles.course}>Course 3</Button>
-          <Button style={styles.course} onPress={() => navigation.navigate("Dashboard")}  >Quizzes</Button>
+          <Button style={styles.course} mode="outlined" onPress={() => navigation.navigate("QuizIndex")}>
+        Quiz
+      </Button>
         </View>
       </View>
     </Background>
