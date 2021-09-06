@@ -1,9 +1,9 @@
 import React from "react";
 import { ScrollView, StatusBar } from "react-native";
 
-import spaceQuestions from "../data/space";
-import westernsQuestions from "../data/westerns";
-import computerQuestions from "../data/computers";
+import spaceQuestions from "../data/portfolio";
+import westernsQuestions from "../data/dsalg";
+import computerQuestions from "../data/reactnative";
 
 import { RowItem } from "../components/RowItem";
 
@@ -12,7 +12,7 @@ export default function QuizIndex({ navigation })  {
   <ScrollView>
     <StatusBar barStyle="dark-content" />
     <RowItem
-      name="Space"
+      name="Portfolio"
       color="#36b1f0"
       onPress={() =>
         navigation.navigate("Quiz", {
@@ -23,7 +23,7 @@ export default function QuizIndex({ navigation })  {
       }
     />
     <RowItem
-      name="Westerns"
+      name="Data Structures and Algorithms"
       color="#799496"
       onPress={() =>
         navigation.navigate("Quiz", {
@@ -34,7 +34,7 @@ export default function QuizIndex({ navigation })  {
       }
     />
     <RowItem
-      name="Computers"
+      name="React Native"
       color="#49475B"
       onPress={() =>
         navigation.navigate("Quiz", {
