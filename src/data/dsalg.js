@@ -1,21 +1,21 @@
 const questions = [
   {
     question:
-      "In the Roy Rogers -Dale Evans Museum, you will find Roy and Dales stuffed horses. Roy's horse was named Trigger, which was Dales horse?",
+      "What data structure is used in the optimized solution of TwoSum problem?",
     answers: [
-      { id: "1", text: "Buttermilk", correct: true },
-      { id: "2", text: "Daisy" },
-      { id: "3", text: "Scout" },
-      { id: "4", text: "Tulip" }
+      { id: "1", text: "Hashmap", correct: true },
+      { id: "2", text: "LinkedList" },
+      { id: "3", text: "Graph" },
+      { id: "4", text: "Tree" }
     ]
   },
   {
-    question: 'What weapon has become known as "the gun that won the west"?',
+    question: 'What is the time complexity of traversing through a binary tree?',
     answers: [
-      { id: "1", text: "Smith & Wesson Revolver" },
-      { id: "2", text: "Colt Peacemaker", correct: true },
-      { id: "3", text: "Winchester Revolver" },
-      { id: "4", text: "Sharps Derringer" }
+      { id: "1", text: "O(n^2)" },
+      { id: "2", text: "O(n)", correct: true },
+      { id: "3", text: "O(1)" },
+      { id: "4", text: "O(nlogn)" }
     ]
   }
 ];
