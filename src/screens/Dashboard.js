@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Paragraph from "../components/Paragraph";
 import Button from "../components/Button";
 import VideoPlayer from "../components/VideoPlayer";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, SafeAreaView } from "react-native";
 import ProgressBar from "../components/ProgressBar";
 import { theme } from "../core/theme";
 
@@ -14,14 +14,14 @@ export default function Dashboard({ navigation, userName }) {
   userName = "ibrahim suhail";
   return (
     <Background>
-      <View style={styles.topBarView}>
-        <View style={styles.topBar}>
-          <View style={{ alignSelf: "flex-start" }}>
+      <SafeAreaView style={styles.topBarView}>
+        <SafeAreaView style={styles.topBar}>
+          <SafeAreaView style={{ alignSelf: "flex-start" }}>
             <Text style={{ fontSize: 20 }}>{userName}</Text>
-          </View>
+          </SafeAreaView>
           <ProgressBar />
-        </View>
-      </View>
+        </SafeAreaView>
+      </SafeAreaView>
       <Logo />
       <VideoPlayer />
       <View style={styles.courseOutlineContainer}>
