@@ -5,6 +5,7 @@ import QuizIndex from '../screens/QuizIndex';
 import LoginScreen from '../screens/LoginScreen';
 import RegisterScreen from '../screens/RegisterScreen'
 import Dashboard from '../screens/Dashboard';
+import Quiz from '../screens/Quiz'
 
 const screens = {
     StartScreen: {
@@ -22,6 +23,9 @@ const screens = {
     Dashboard: {
         screen: Dashboard
     },
+    Quiz: {
+        screen: Quiz
+    }
 
    
 }
