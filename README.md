@@ -84,10 +84,18 @@
 
 ### 3. Navigation
 
+![Start Screen](HeadstartPics/StartScreen.png)
+![Login Screen](HeadstartPics/LoginScreen.png)
+![Signup Screen](HeadstartPics/SignupScreen.png)
+![Dashboard](HeadstartPics/Dashboard.png)
+![Session Link](DbZoom.gif)
+![Quiz](Quiz.gif)
 
 
 
 
 
 
-## Wireframes
+
+
+
