@@ -5,13 +5,15 @@ import Header from "../components/Header";
 import Paragraph from "../components/Paragraph";
 import Button from "../components/Button";
 import VideoPlayer from "../components/VideoPlayer";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, Text, Linking } from "react-native";
 import ProgressBar from "../components/ProgressBar";
 import { theme } from "../core/theme";
 import { createStackNavigator } from 'react-navigation-stack';
 import { createAppContainer} from 'react-navigation';
 import LoginScreen from '../screens/LoginScreen'
 import QuizIndex from '../screens/QuizIndex'
+import {Resume, Dsalg, Projects} from '../core/links'
+
 
 export default function Dashboard({ navigation }) {
   // const screens = {
@@ -29,7 +31,9 @@ export default function Dashboard({ navigation }) {
   // const pressHandler = () => {
   //   navigation.navigate('QuizIndex')
   // }
-
+  const res = Resume.RESUME;
+  const dsalg = Dsalg.DSALG;
+  const proj = Projects.PROJECTS;
   return (
     <Background>
       <View style={styles.topBarView}>
@@ -42,9 +46,13 @@ export default function Dashboard({ navigation }) {
       <VideoPlayer />
       <View style={styles.courseOutlineContainer}>
         <View>
-          <Button style={styles.course}>Course 1</Button>
-          <Button style={styles.course}>Course 2</Button>
-          <Button style={styles.course}>Course 3</Button>
+        {/* <Text style={styles.course}
+          onPress={() => Linking.openURL(res)}>
+            Resume
+        </Text> */}
+          <Button onPress={() => Linking.openURL(res)} style={styles.course}>Resume Workshop (Sample Session)</Button>
+          <Button onPress={() => Linking.openURL(dsalg)} style={styles.course}>DS & Algo Workshop (Sample Session) 2</Button>
+          <Button onPress={() => Linking.openURL(proj)} style={styles.course}>App Dev (Sample Session)</Button>
           <Button style={styles.course} mode="outlined" onPress={() => navigation.navigate("QuizIndex")}>
         Quiz
       </Button>
