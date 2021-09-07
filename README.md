@@ -84,7 +84,7 @@
 
 ### 3. Navigation
 
-![Start Screen](HeadstartPics/StartScreen.png)
+![Start Screen](HeadstartPics/StartScreen.PNG)
 ![Login Screen](HeadstartPics/LoginScreen.png)
 ![Signup Screen](HeadstartPics/SignupScreen.png)
 ![Dashboard](HeadstartPics/Dashboard.png)
