@@ -88,8 +88,8 @@
 ![Login Screen](HeadstartPics/LoginScreen.png)
 ![Signup Screen](HeadstartPics/SignupScreen.png)
 ![Dashboard](HeadstartPics/Dashboard.png)
-![Session Link](DbZoom.gif)
-![Quiz](Quiz.gif)
+![Session Link](Headstartpics/DbZoom.gif)
+![Quiz](HeadstartPics/Quiz.gif)
 
 
 
