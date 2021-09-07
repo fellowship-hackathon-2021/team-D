@@ -34,8 +34,8 @@ export default function Dashboard({ navigation }) {
     <Background>
       <View style={styles.topBarView}>
         <View style={styles.topBar}>
-          <Text>User Name</Text>
-          <ProgressBar />
+          <Text>Free Tier. Create account to gain full access.</Text>
+          
         </View>
       </View>
       <Logo />
@@ -60,7 +60,8 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   topBarView: {
-    backgroundColor: theme.colors.placeholder,
+    fontSize: 100,
+    backgroundColor: '#c5fce4',
     top: 0,
     position: "absolute",
     width: "100%",

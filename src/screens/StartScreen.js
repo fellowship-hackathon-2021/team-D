@@ -24,13 +24,13 @@ export default function StartScreen({ navigation }) {
         mode="outlined"
         onPress={() => navigation.navigate("RegisterScreen")}
       >
-        Sign Up
+        Sign up
       </Button>
       {
         //    TO GET TO THE DASHBOARD SCREEN
       }
       <Button mode="outlined" onPress={() => navigation.navigate("Dashboard")}>
-        Home
+        Free Tier
       </Button>
     </Background>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import { View, StyleSheet, Button } from "react-native";
 import { Video, AVPlaybackStatus } from "expo-av";
+import welcomeIntro from "../assets/welcomeIntro.mp4";
 
 const VideoPlayer = ({}) => {
   const video = useRef(null);
@@ -11,9 +12,7 @@ const VideoPlayer = ({}) => {
       <Video
         ref={video}
         style={styles.video}
-        source={{
-          uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-        }}
+        source={welcomeIntro}
         useNativeControls
         resizeMode="contain"
         isLooping
