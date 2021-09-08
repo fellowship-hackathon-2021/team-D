@@ -13,6 +13,9 @@ import { createAppContainer} from 'react-navigation';
 import LoginScreen from '../screens/LoginScreen'
 import QuizIndex from '../screens/QuizIndex'
 import {Resume, Dsalg, Projects} from '../core/links'
+import AwesomeButton from "react-native-really-awesome-button";
+// import LinearGradient from "react-native-linear-gradient";
+import {LinearGradient} from 'expo-linear-gradient';
 
 
 export default function Dashboard({ navigation }) {
@@ -50,12 +53,30 @@ export default function Dashboard({ navigation }) {
           onPress={() => Linking.openURL(res)}>
             Resume
         </Text> */}
-          <Button onPress={() => Linking.openURL(res)} style={styles.course}>Resume Workshop (Sample Session)</Button>
-          <Button onPress={() => Linking.openURL(dsalg)} style={styles.course}>DS & Algo Workshop (Sample Session) 2</Button>
-          <Button onPress={() => Linking.openURL(proj)} style={styles.course}>App Dev (Sample Session)</Button>
-          <Button style={styles.course} mode="outlined" onPress={() => navigation.navigate("QuizIndex")}>
+          <AwesomeButton backgroundColor = "#4361ee" stretch = "true" backgroundShadow = "#ffffff" backgroundDarker = "#ffffff" onPress={() => Linking.openURL(res)} style={styles.courseBtn}>Resume Workshop</AwesomeButton> 
+          <AwesomeButton backgroundColor = "#4895ef" stretch = "true"  backgroundShadow = "#ffffff" backgroundDarker = "#ffffff" onPress={() => Linking.openURL(dsalg)} style={styles.courseBtn}>DS & Algo Workshop</AwesomeButton>
+          <AwesomeButton backgroundColor = "#4361ee" stretch = "true" backgroundShadow = "#ffffff" backgroundDarker = "#ffffff" onPress={() => Linking.openURL(proj)} style={styles.courseBtn}>App Dev </AwesomeButton>
+          <AwesomeButton 
+
+            ExtraContent={
+              <LinearGradient
+                colors={["#fb8500", "#ffb703", "#219ebc", "#8ecae6"]}
+              />
+            }
+            backgroundColor = "#b5179e"
+            
+            
+            // style={styles.quizBtn} 
+            // raiseLevel = "8"
+            borderColor = "#F47133"
+            activityColor = "#fb8500"
+            stretch = "true" 
+            mode="outlined" 
+            onPress={() => navigation.navigate("QuizIndex") 
+          }>
         Quiz
-      </Button>
+      </AwesomeButton>
+     
         </View>
       </View>
     </Background>
@@ -77,9 +98,27 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   courseOutline: { flex: 1 },
-  courseOutlineContainer: { width: "100%" },
+  courseOutlineContainer: { 
+    width: "100%",
+    
+   },
   course: {
     marginTop: 20,
     fontSize: 18,
+    
+  },
+  quizBtn: {
+    width : "50%",
+    alignSelf : "center",
+    backgroundColor : "#fdffb6",
+    color : "#fdffb6",
+    
+  },
+  courseBtn : {
+    alignSelf : "center",
+    paddingTop : 75,
+    paddingBottom : 0,
+    borderRadius : 0,
+    width : "70%",
   },
 });
