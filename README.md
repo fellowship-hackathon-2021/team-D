@@ -85,7 +85,7 @@
 ### 3. Navigation
 
 
-![Session](HeadstartPics/DbZoom.gif)
+![Session](HeadstartPics/DbZoom.gif)\
 ![Quiz](HeadstartPics/Quiz.gif)
 
 
